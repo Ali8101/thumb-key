@@ -15,77 +15,69 @@ val KB_EN_THUMBKEY_MAIN =
         listOf(
             listOf(
                 KeyItemC(
-                    center = KeyC("s", size = LARGE),
-                    swipeType = FOUR_WAY_DIAGONAL,
-                    bottomRight = KeyC("w"),
+                    center = KeyC("ه", size = LARGE),
+                    bottomRight = KeyC("ق"),
+                    bottom = KeyC("ة"),
                 ),
                 KeyItemC(
-                    center = KeyC("r", size = LARGE),
-                    swipeType = TWO_WAY_VERTICAL,
-                    bottom = KeyC("g"),
+                    center = KeyC("ب", size = LARGE),
+                    top = KeyC("ُ"),
+                    topRight = KeyC("َ"),
+                    bottom = KeyC("خ"),
+                    bottomLeft = KeyC("ض"),
                 ),
                 KeyItemC(
-                    center = KeyC("o", size = LARGE),
-                    swipeType = FOUR_WAY_DIAGONAL,
-                    bottomLeft = KeyC("u"),
+                    center = KeyC("م", size = LARGE),
+                    topLeft = KeyC("ْ"),
+                    bottomLeft = KeyC("إ"),
+                    left = KeyC("؟"),
                 ),
                 EMOJI_KEY_ITEM,
             ),
             listOf(
                 KeyItemC(
-                    center = KeyC("n", size = LARGE),
-                    swipeType = TWO_WAY_HORIZONTAL,
-                    right = KeyC("m"),
+                    center = KeyC("ي", size = LARGE),
+                    topRight = KeyC("ص"),
+                    right = KeyC("ح"),
+                    bottomRight = KeyC("ط"),
+                    bottom = KeyC("ى"),
                 ),
                 KeyItemC(
-                    center = KeyC("h", size = LARGE),
-                    topLeft = KeyC("j"),
-                    top = KeyC("q"),
-                    topRight = KeyC("b"),
-                    right = KeyC("p"),
-                    bottomRight = KeyC("y"),
-                    bottom = KeyC("x"),
-                    bottomLeft = KeyC("v"),
-                    left = KeyC("k"),
+                    center = KeyC("ا", size = LARGE),
+                    topLeft = KeyC("ف"),
+                    top = KeyC("ج"),
+                    topRight = KeyC("ش"),
+                    right = KeyC("آ"),
+                    bottomRight = KeyC("ك"),
+                    bottom = KeyC("ت"),
+                    bottomLeft = KeyC("ل"),
+                    left = KeyC("س"),
                 ),
                 KeyItemC(
-                    center = KeyC("a", size = LARGE),
-                    swipeType = FOUR_WAY_CROSS,
-                    left = KeyC("l"),
-                    top =
-                        KeyC(
-                            display = KeyDisplay.IconDisplay(Icons.Outlined.ArrowDropUp),
-                            action = ToggleShiftMode(true),
-                            swipeReturnAction = ToggleCurrentWordCapitalization(true),
-                            color = MUTED,
-                        ),
-                    bottom =
-                        KeyC(
-                            ToggleShiftMode(false),
-                            swipeReturnAction = ToggleCurrentWordCapitalization(false),
-                        ),
-                ),
-                NUMERIC_KEY_ITEM,
+                    center = KeyC("ر", size = LARGE),
+                    bottom = KeyC("ز"),
+                    bottomLeft = KeyC("ع"),
             ),
             listOf(
                 KeyItemC(
-                    center = KeyC("t", size = LARGE),
-                    swipeType = FOUR_WAY_DIAGONAL,
-                    topRight = KeyC("c"),
+                    center = KeyC("و", size = LARGE),
+                    top = KeyC("ّ"),
+                    topRight = KeyC("ؤ"),
                 ),
                 KeyItemC(
-                    center = KeyC("i", size = LARGE),
-                    top = KeyC("f"),
-                    topRight = KeyC("'", color = MUTED),
-                    right = KeyC("z"),
-                    bottomRight = KeyC("-", color = MUTED),
-                    bottom = KeyC(".", color = MUTED),
-                    bottomLeft = KeyC("*", color = MUTED),
+                    center = KeyC("ن", size = LARGE),
+                    top = KeyC("ث"),
+                    topRight = KeyC("غ"),
+                    right = KeyC("أ"),
+                    bottomRight = KeyC("ئ"),
+                    topRight = KeyC("غ"),
+                    left = KeyC("ء"),
+                    topLeft = KeyC("ظ"),
                 ),
                 KeyItemC(
-                    center = KeyC("e", size = LARGE),
-                    swipeType = FOUR_WAY_DIAGONAL,
-                    topLeft = KeyC("d"),
+                    center = KeyC("د", size = LARGE),
+                    left = KeyC("ً"),
+                    top = KeyC("ذ"),
                 ),
                 BACKSPACE_KEY_ITEM,
             ),
@@ -187,12 +179,12 @@ val KB_EN_THUMBKEY_SHIFTED =
 
 val KB_EN_THUMBKEY: KeyboardDefinition =
     KeyboardDefinition(
-        title = "english thumb-key",
+        title = "Arabic thumb-key",
         modes =
             KeyboardDefinitionModes(
                 main = KB_EN_THUMBKEY_MAIN,
                 shifted = KB_EN_THUMBKEY_SHIFTED,
-                numeric = NUMERIC_KEYBOARD,
+                numeric = NUMERIC_KEYBOARD, "٠١٢٣٤٥٦٧٨٩"
             ),
         settings =
             KeyboardDefinitionSettings(
